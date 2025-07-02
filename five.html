@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Charitify Footer</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #111;
+  color: #ccc;
+}
+
+.footer {
+  background: #111;
+  padding: 50px 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #333;
+}
+
+.footer-column {
+  flex: 1 1 300px;
+  min-width: 250px;
+}
+
+.logo {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.description {
+  margin-bottom: 20px;
+  line-height: 1.7;
+  color: #ccc;
+}
+
+.social-icons i {
+  color: orange;
+  margin-right: 15px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.footer-column h3 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-column p {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.footer-column i {
+  color: orange;
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 0;
+  font-size: 15px;
+}
+
+.bottom-links a {
+  margin-left: 20px;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.bottom-links a:hover {
+  color: orange;
+}
+
+/* .scroll-top {
+  background: orange;
+  color: #fff;
+  border-radius: 50%;
+  padding: 12px;
+  cursor: pointer;
+} */
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .bottom-links a {
+    margin: 0 10px;
+  }
+}
+
+</style>
+<body>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Left Column -->
+      <div class="footer-column">
+        <img src="./assets/logo-light.png" alt="Charitify Logo" class="logo">
+        <p class="description">The secret to happiness lies in helping others.<br>Never underestimate the difference YOU can make in the lives of the poor</p>
+        <div class="social-icons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-pinterest-p"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+      </div>
+
+      <!-- Middle Column -->
+      <div class="footer-column">
+        <h3>Recent Campaigns</h3>
+        <p>First charity activity of this summer. -1 Year Ago</p>
+        <p>Big charity: build school for poor children. -2 Year Ago</p>
+        <p>Clean-water system for rural poor. -2 Year Ago</p>
+        <p>Nepal earthquake donation campaigns. -3 Year Ago</p>
+      </div>
+
+      <!-- Right Column -->
+      <div class="footer-column">
+        <h3>Charitify Location</h3>
+        <p><i class="fa-solid fa-envelope"></i> Info@YourDomain.com</p>
+        <p><i class="fa-solid fa-mobile-screen"></i> +(333) 052 39876</p>
+        <p><i class="fa-solid fa-globe"></i> Www.YourWebsite.com</p>
+        <p><i class="fa-solid fa-location-dot"></i> 60 Grand Avenue. Central New Road 0708, USA</p>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <p>© 2021 Charitify Powered by DynamicLayers</p>
+      <div class="bottom-links">
+        <a href="#">Orders</a>
+        <a href="#">Terms</a>
+        <a href="#">Report Problem</a>
+      </div>
+      <!-- <div class="scroll-top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </div> -->
+    </div>
+  </footer>
+
+</body>
+</html>
